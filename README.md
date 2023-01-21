@@ -9,6 +9,6 @@ import { Pipe } from '@socketsupply/socket-pipe'
 const pipe = new Pipe({ json: true })
 
 pipe.on('data', json => {
-  pipe.write(Message.from('stdout', data))
+  pipe.write(Message.from('stdout', json))
 })
 ```
